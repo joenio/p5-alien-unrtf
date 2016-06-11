@@ -17,7 +17,8 @@ my $builder = Alien::Base::ModuleBuild->new(
   requires => {
     'Alien::Base' => 0,
   },
-  alien_build_commands => [ 'sh bootstrap', '%c --prefix=%s', 'make' ]
+  alien_build_commands => [ 'sh bootstrap', '%c --prefix=%s', 'make' ],
+  license => 'perl'
 );
  
 $builder->create_build_script;
