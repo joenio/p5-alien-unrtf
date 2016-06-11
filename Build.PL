@@ -1,12 +1,15 @@
-use Alien::UnRTF;
-use Module::Build 0.28; # need at least 0.28
+use strict;
+use Alien::Base::ModuleBuild;
  
-my $builder = Module::Build->new(
+my $builder = Alien::Base::ModuleBuild->new(
+  module_name      => 'Alien::UnRTF',
+  dist_abstract    => 'Build and install unrtf',
+  alien_name       => 'unrtf',
   alien_repository => {
     protocol => 'http',
     host     => 'ftp.gnu.org',
     location => '/gnu/unrtf',
-    pattern  => qr/^unrtf_([\d\.-]+)\.tar\.gz$/,
+    pattern  => qr/^unrtf[_-]([\d\.-]+)\.tar\.gz$/,
   },
 );
  
