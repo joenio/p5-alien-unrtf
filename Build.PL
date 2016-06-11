@@ -11,6 +11,7 @@ my $builder = Alien::Base::ModuleBuild->new(
     location => '/gnu/unrtf',
     pattern  => qr/^unrtf[_-]([\d\.-]+)\.tar\.gz$/,
   },
+  alien_build_commands => [ 'sh bootstrap', '%c --prefix=%s', 'make' ]
 );
  
 $builder->create_build_script;
