@@ -18,7 +18,13 @@ my $builder = Alien::Base::ModuleBuild->new(
     'Alien::Base' => 0,
   },
   alien_build_commands => [ 'sh bootstrap', '%c --prefix=%s', 'make' ],
-  license => 'perl'
+  dist_author => 'Joenio Costa <joenio@joenio.me>',
+  license     => 'perl',
+  meta_merge => {
+    resources  => {
+      repository => 'http://github.com/joenio/p5-alien-unrtf'
+    }
+  },
 );
  
 $builder->create_build_script;
