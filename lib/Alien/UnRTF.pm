@@ -12,6 +12,8 @@ Alien::UnRTF - Build and make available the unrtf tool
 
 =head1 DESCRIPTION
 
+B<**this is a beta release**>
+
 This distribution installs L<UnRTF|https://www.gnu.org/software/unrtf> so that
 it can be used by other Perl distributions. If already installed for your
 operating system, and it can be found, this distribution will use the UnRTF
