@@ -79,3 +79,7 @@
 
 # Avoid archives of this distribution
 \bAlien-UnRTF-[\d\.\_]+
+
+# Avoid cpan local:lib installed modules
+\B\.cpan\b
+\bperl5\b
