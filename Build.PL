@@ -12,6 +12,7 @@ my $builder = Alien::Base::ModuleBuild->new(
     pattern  => qr/^unrtf[_-]([\d\.-]+)\.tar\.gz$/,
   },
   configure_requires => {
+    'Module::Build'            => 0.42,
     'Alien::Base::ModuleBuild' => 0,
   },
   requires => {
