@@ -18,6 +18,12 @@ sub alien_check_installed_version {
   }
 }
 
+sub alien_bin_requires {
+  {
+    'Alien::Autotools' => 0,
+  }
+}
+
 sub alien_build_commands {
   [ 'sh bootstrap', '%c --prefix=%s', 'make' ];
 }
